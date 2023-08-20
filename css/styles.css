@@ -1,0 +1,226 @@
+/* 
+	This StyleSheet file will define all positioning and dimensioning instructions for every element in the index.html file
+	Color scheme will be set with JS and one of the gmk_*.css file, depending on the user (gmk_9009 will be set as the default one)
+*/
+
+/* All elements */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Fira Code", monospace;
+	font-size: 16px;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+/* 
+Styles for class container elements 
+- These elements are only for the purpose of occupying the whole of another element to use the relative positioning
+*/
+.container {
+	/* Dimensions */
+	width: 100%;
+	height: 100%;
+	/* Positioning */
+	position: relative;
+}
+
+/* HEADER -*/
+header {
+	/* Dimensions */
+	width: 100%;
+	height: 10vh;
+	padding: 1em 0;
+	/* Positioning */
+	z-index: 2;
+}
+
+header img {
+	/* Dimensions */
+	width: auto;
+	height: 100%;
+	/* Positioning */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+/*- HEADER */
+
+/* MAIN -*/
+main {
+	/* Positioning */
+	position: absolute;
+	top: 0;
+	left: 0;
+	/* Dimensions */
+	width: 100%;
+	height: 100vh;
+}
+
+#content {
+	/* Dimensions */
+	width: 50%;
+	/* height: 50%; */
+	height: auto;
+	max-width: 75%;
+	max-height: 60%;
+	/* Positioning */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.icon {
+	/* Dimensions */
+	display: inline;
+	height: 0.95em;
+}
+
+#stats {
+	/* Dimenstions */
+	width: 100%;
+	height: auto;
+	padding: 1em;
+	/* Positioning */
+	position: relative;
+}
+
+#stats h2 {
+	/* Element Styling */
+	font-size: 26px;
+	display: inline;
+}
+
+#stats ul {
+	/* Dimensions */
+	width: 300px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	/* Positioning */
+	position: absolute;
+	top: 50%;
+	left: 60%;
+	transform: translate(-50%, -50%);
+}
+
+#stats ul li {
+	/* Positioning */
+	position: relative;
+	/* Element Styling */
+	font-size: 22px;
+	cursor: pointer;
+}
+
+.stat {
+	/* Element Styling */
+	font-size: inherit;
+	display: inline;
+	text-decoration: underline dotted;
+}
+
+/* ? Better solution? */
+.stat-info {
+	/* Element Sizing and Styling */
+	visibility: hidden;
+	width: 250px;
+	background-color: black; /* Temporary */
+	color: #fff; /* Temporary */
+	text-align: center;
+	border-radius: 0.5em;
+	padding: 0.25em 0;
+
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+}
+
+#stats ul li:hover .stat-info {
+	visibility: visible;
+}
+/* ? Better solution? */
+
+#words-input {
+	/* Dimensions */
+	width: 95%;
+	height: auto;
+	padding: 0.75em;
+	margin: 0 2.5%;
+	/* Element Styling */
+	border-radius: 1em;
+	border: 3px solid black; /* Color is temporary */
+}
+
+#words-game {
+	/* Dimensions */
+	width: 50%;
+	padding: 0.5em 3em;
+	/* Positioning */
+	display: inline;
+	float: left;
+}
+
+.words {
+	/* Positioning */
+	display: inline;
+	/* Element Styling */
+	padding: 0.1em;
+	border-bottom: 2px solid transparent;
+	cursor: pointer;
+	color: gray;
+}
+/*! THIS IS TEMPORARY -> This is gonna be selected with JS */
+.words:first-of-type {
+	border-bottom: 2px solid black;
+	color: black;
+}
+
+#theme {
+	/* Dimensions */
+	width: 50%;
+	padding: 0.5em 3em;
+	/* Positioning */
+	display: inline;
+	float: right;
+	/* Text Styling */
+	text-align: end;
+	text-decoration: underline dotted;
+	cursor: pointer;
+}
+/*- MAIN */
+
+/* FOOTER -*/
+footer {
+	/* Dimensions */
+	width: 100%;
+	height: 5vh;
+	/* Positioning */
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer-element {
+	/* Positioning */
+	display: inline;
+	/* Dimensions */
+	padding: 0 2em;
+	/* Element Styling (just for <a>) */
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+}
+/*- FOOTER */

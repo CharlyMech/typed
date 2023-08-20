@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Import Fira Code font from Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Import Main Style File -->
+		<link rel="stylesheet" href="/css/styles.css" />
+
+		<link
+			rel="stylesheet"
+			href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+		/>
+		<title>Typed</title>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<img src="/images/typed.png" alt="Typed Logo" />
+			</div>
+		</header>
+		<main>
+			<div id="content">
+				<div id="stats">
+					<!-- Stats title -->
+					<h2>Your stats:</h2>
+					<!--/ Stats title -->
+					<!-- Stats ul -->
+					<ul>
+						<li>
+							WPM <i class="las la-info-circle"></i>:
+							<div class="stat" id="wpm">WW</div>
+							<span class="stat-info">Words Per Minute</span>
+						</li>
+						<li>
+							ACC <i class="las la-info-circle"></i>:
+							<div class="stat" id="acc">AA</div>
+							<span class="stat-info">Accuracy</span>
+						</li>
+					</ul>
+					<!--/ Stats ul -->
+				</div>
+				<div id="words-input">
+					<!-- Currently 200 words: max words for application -->
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+					non velit libero. Suspendisse potenti. Mauris lobortis lectus at
+					augue tristique, id elementum odio ullamcorper. Curabitur quis
+					porta ex. Cras nisl risus, congue non nibh sit amet, vehicula
+					sagittis metus. Nam lectus nisl, feugiat eu lorem non, lacinia
+					maximus augue. Nulla cursus egestas libero, interdum semper leo
+					iaculis lacinia. Praesent faucibus ante turpis, non suscipit
+					tellus luctus eu. Cras vehicula ultricies varius. Donec eget
+					tincidunt dui. Fusce in fringilla nunc. Nulla facilisi. Aliquam
+					venenatis ligula eu ante lacinia, id elementum ligula volutpat.
+					Aliquam erat volutpat. Donec lobortis leo tortor, sed venenatis
+					mi hendrerit nec. Donec lobortis lobortis mauris vel ultricies.
+					Maecenas dignissim est urna, rhoncus luctus nisi varius vel.
+					Pellentesque nec aliquam neque, ac ornare quam. Proin laoreet
+					dictum ornare. Duis et elit quis urna interdum tristique. Nullam
+					tincidunt urna a ante commodo semper. Donec et sem justo. Fusce
+					convallis eleifend metus tempor cursus. Aenean varius maximus
+					elementum. Suspendisse imperdiet augue et libero consequat
+					volutpat. Sed ac lectus non sem dapibus malesuada in venenatis
+					ipsum. Donec nec auctor ligula. Suspendisse potenti. Aenean
+					ultricies nibh sit amet ipsum fermentum, sit amet malesuada
+					tellus viverra. Fusce imperdiet, lorem a porttitor iaculis, ipsum
+					lectus.
+				</div>
+				<div id="words-game">
+					<div class="words" id="w-10">10</div>
+					/
+					<div class="words" id="w-25">25</div>
+					/
+					<div class="words" id="w-50">50</div>
+					/
+					<div class="words" id="w-100">100</div>
+					/
+					<div class="words" id="w-200">200</div>
+				</div>
+				<div id="theme">Select GMK Theme</div>
+			</div>
+		</main>
+		<footer>
+			<div class="footer-element">
+				About Typed <i class="las la-question-circle"></i>
+			</div>
+			/
+			<a
+				class="footer-element"
+				href="https://github.com/CharlyMech/typed"
+				target="_blank"
+			>
+				GitHub Repository <i class="lab la-github"></i>
+			</a>
+		</footer>
+	</body>
+</html>
