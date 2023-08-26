@@ -22,6 +22,18 @@
 	--gray: #676767; /*This is the logo color*/
 }
 
+/* Color selection properties */
+::-moz-selection {
+	/* Code for Firefox */
+	color: var(--white);
+	background: var(--shadow);
+}
+
+::selection {
+	color: var(--white);
+	background: var(--shadow);
+}
+
 body {
 	/* Display */
 	display: flex;
