@@ -280,8 +280,16 @@ main {
 }
 
 #text-consent p,
-b {
+b,
+a {
 	font-size: 14px;
+}
+
+#text-consent p i {
+	/* Styling */
+	text-transform: uppercase;
+	text-decoration: underline;
+	cursor: pointer;
 }
 
 #cookies button {
@@ -306,6 +314,85 @@ b {
 	font-weight: bolder;
 }
 /*- COOKIES ALERT */
+
+/* COOKIES ABOUT -*/
+#about-cookies {
+	/* Set Visibility */
+	visibility: hidden;
+}
+
+#about-cookies .overlay {
+	/* Dimensions */
+	width: 100%;
+	height: 100%;
+	/* Positioning */
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 4;
+	/* Set Color */
+	background-color: var(--black-opacity);
+}
+
+#about-cookies .content {
+	/* Dimensions */
+	width: 50%;
+	max-width: 80%;
+	height: auto;
+	max-height: 80%;
+	padding: 3em;
+	/* Positioning */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 5;
+	/* Syling */
+	background-color: var(--white);
+	border-radius: 1em;
+}
+
+#about-cookies .content button {
+	/* Dimensions */
+	width: 35px;
+	height: 35px;
+	/* Positioning */
+	position: absolute;
+	top: 1em;
+	right: 1em;
+	/* Styling */
+	border-radius: 50%;
+	border: none;
+	cursor: pointer;
+	background-color: transparent;
+}
+
+#about-cookies .content button i {
+	/* Font Syling */
+	font-size: 30px;
+}
+
+#about-cookies .content h1 {
+	/* Font Syling */
+	font-size: 30px;
+	margin-bottom: 0.5em;
+	text-align: justify;
+}
+
+#about-cookies .content p {
+	/* Font Syling */
+	margin-bottom: 0.5em;
+	text-align: justify;
+}
+
+#about-cookies .content ul {
+	/* Dimensions */
+	width: 75%;
+	/* Font Syling */
+	margin-left: 5em;
+	text-align: justify;
+}
+/*- COOKIES ABOUT */
 
 /* FOOTER -*/
 footer {

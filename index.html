@@ -12,7 +12,7 @@
 		/>
 		<!-- Import Main Style File -->
 		<link rel="stylesheet" href="css/styles.css" />
-
+		<!-- Import Line Awesome Icons -->
 		<link
 			rel="stylesheet"
 			href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
@@ -101,12 +101,52 @@
 					<h1>Cookie consent</h1>
 					<p>
 						This website uses cookies to store your custom configuration
-						and scores. Click the <b>Accept</b> button to close this
-						message.
+						and scores (see more
+						<i onclick="showElement('about-cookies')">about cookies</i>).
+						Click the <b>Accept</b> button to close this message.
 					</p>
 				</div>
-				<button>Accept</button>
+				<button onclick="closeElement('cookies');clickDoubleFunctTest()">
+					Accept
+				</button>
 			</div>
+		</section>
+		<section id="about-cookies">
+			<!-- Overlay element to act like a focused window -->
+			<div class="overlay"></div>
+			<!-- Content -->
+			<div class="content">
+				<button onclick="closeElement('about-cookies')">
+					<i class="las la-times"></i>
+				</button>
+				<div class="container">
+					<h1>Cookies Policy</h1>
+					<p>
+						This website uses cookies to store your information about the
+						game. This is the information stored:
+					</p>
+					<ul>
+						<li>
+							<b>Cookie accepted message</b>, just not to show the
+							message again once it's accepted.
+						</li>
+						<li>
+							<b>Selected theme</b>. If a theme is not selected, the
+							default one will be stored.
+						</li>
+						<li>
+							Preferred or last <b>typing test type</b> (the number of
+							words selected).
+						</li>
+						<li>
+							<b>WPM</b> and <b>ACC</b> top values. When a top WPM is
+							achieved, the calculated values will be stored in two
+							separated cookies.
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--/ Content -->
 		</section>
 		<footer>
 			<div class="footer-element">
@@ -121,5 +161,7 @@
 				GitHub Repository <i class="lab la-github"></i>
 			</a>
 		</footer>
+		<!-- Import JS file -->
+		<script src="main.js"></script>
 	</body>
 </html>
